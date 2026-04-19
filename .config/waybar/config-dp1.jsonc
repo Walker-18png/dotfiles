@@ -9,7 +9,7 @@
         "margin-left": 5,
         "margin-right": 5,
 
-        "modules-left": ["hyprland/workspaces", "hyprland/window", "custom/prev", "image", "custom/next", "custom/playpause", "custom/media"],
+        "modules-left": ["hyprland/workspaces", "hyprland/window", "image", "custom/media", "custom/prev", "custom/playpause", "custom/next"],
         "modules-center": ["custom/arch"],
         "modules-right": ["network#upload", "network#download", "cpu", "custom/cputemp", "memory", "pulseaudio", "custom/separator", "clock", "tray"],
 
@@ -69,7 +69,7 @@
 
         "image": {
             "exec": "~/.config/waybar/scripts/album-art.sh",
-            "size": 32,
+            "size": 42,
             "interval": 2,
             "tooltip": false,
             "on-click": "~/.config/waybar/scripts/spotify-toggle.sh"
@@ -103,7 +103,7 @@
             "exec": "~/.config/waybar/scripts/media.sh",
             "return-type": "json",
             "interval": 2,
-            "on-click": "playerctl -p spotify play-pause",
+            "on-click": "~/.config/waybar/scripts/spotify-toggle.sh",
             "on-scroll-up": "playerctl -p spotify next",
             "on-scroll-down": "playerctl -p spotify previous"
         }

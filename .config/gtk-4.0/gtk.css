@@ -45,6 +45,46 @@ label {
     color: #cce0ff;
 }
 
+/* Nautilus specific */
+.nautilus-window,
+.nautilus-window .view {
+    background-color: #0a101c;
+    color: #a9c1d9;
+}
+
+.nautilus-window headerbar {
+    background-color: #070d18;
+}
+
+.nautilus-window .sidebar {
+    background-color: #070d18;
+    color: #6a8faf;
+}
+
+.nautilus-window .sidebar row:selected {
+    background-color: rgba(137, 180, 250, 0.15);
+    color: #89b4fa;
+}
+
+.nautilus-window .sidebar row:hover {
+    background-color: rgba(137, 180, 250, 0.08);
+}
+
+.nautilus-list-view .view {
+    background-color: transparent;
+}
+
+.nautilus-list-view row:selected,
+.nautilus-grid-view .child:selected {
+    background-color: rgba(137, 180, 250, 0.2);
+    color: #cce0ff;
+}
+
+.nautilus-list-view row:hover,
+.nautilus-grid-view .child:hover {
+    background-color: rgba(137, 180, 250, 0.08);
+}
+
 /* Event dot indicators on calendar dates */
 datechooser button.day dot {
     background-color: #89b4fa;
