@@ -1,0 +1,62 @@
+@import url("/usr/share/themes/catppuccin-mocha-blue-standard+default/gtk-4.0/gtk.css");
+
+window, window.background, .background {
+    background-color: #0d1829;
+    color: #cce0ff;
+}
+
+headerbar, .titlebar,
+headerbar:backdrop, .titlebar:backdrop {
+    background-color: #0a1220;
+    color: #cce0ff;
+    border-bottom: 1px solid rgba(137, 180, 250, 0.2);
+}
+
+.view, scrolledwindow, stack, stackswitcher {
+    background-color: #0d1829;
+    color: #a9c1d9;
+}
+
+.sidebar, .navigation-sidebar {
+    background-color: #0a1220;
+    color: #a9c1d9;
+}
+
+calendar {
+    background-color: transparent;
+    color: #a9c1d9;
+}
+
+/* Bottom bar / action bar */
+actionbar, .action-bar, .toolbar,
+actionbar > revealer > box {
+    background-color: #0a1220;
+    color: #cce0ff;
+    border-top: 1px solid rgba(137, 180, 250, 0.2);
+}
+
+actionbar label, .action-bar label, .toolbar label,
+actionbar button, .action-bar button,
+actionbar *, .action-bar * {
+    color: #cce0ff;
+}
+
+label {
+    color: #cce0ff;
+}
+
+/* Event dot indicators on calendar dates */
+datechooser button.day dot {
+    background-color: #89b4fa;
+    min-width: 5px;
+    min-height: 5px;
+    border-radius: 50%;
+}
+
+datechooser button.day:selected dot {
+    background-color: #cce0ff;
+}
+
+datechooser button.day.today dot {
+    background-color: #74c7ec;
+}

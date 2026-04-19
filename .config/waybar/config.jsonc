@@ -1,0 +1,57 @@
+[
+    {
+        "output": "HDMI-A-1",
+        "layer": "top",
+        "position": "top",
+        "height": 44,
+        "spacing": 4,
+        "margin-top": 10,
+        "margin-left": 5,
+        "margin-right": 5,
+
+        "modules-left": ["hyprland/workspaces", "hyprland/window", "custom/media"],
+        "modules-center": ["custom/arch"],
+        "modules-right": ["custom/separator", "clock", "tray"],
+
+        "hyprland/workspaces": {
+            "format": "{name}",
+            "all-outputs": false,
+            "ignore-workspaces": ["DP-1", "HDMI-A-1", "special:magic"],
+            "persistent-workspaces": {
+                "6":  ["HDMI-A-1"],
+                "7":  ["HDMI-A-1"],
+                "8":  ["HDMI-A-1"],
+                "9":  ["HDMI-A-1"],
+                "10": ["HDMI-A-1"]
+            }
+        },
+
+        "hyprland/window": { "max-length": 50 },
+
+        "custom/arch": {
+            "format": "󰣇",
+            "on-click": "walker",
+            "tooltip": false
+        },
+
+        "custom/separator": {
+            "format": "|",
+            "tooltip": false
+        },
+
+        "clock": {
+            "format": "{:%A %d %B %Y  %H:%M}",
+            "tooltip-format": "<tt>{calendar}</tt>"
+        },
+        "tray": { "spacing": 8 },
+
+        "custom/media": {
+            "exec": "~/.config/waybar/scripts/media.sh",
+            "return-type": "json",
+            "interval": 2,
+            "on-click": "playerctl -p spotify play-pause",
+            "on-scroll-up": "playerctl -p spotify next",
+            "on-scroll-down": "playerctl -p spotify previous"
+        }
+    }
+]

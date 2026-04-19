@@ -1,0 +1,25 @@
+background-color=#1e3a5fcc
+text-color=#cce0ffff
+border-color=#89b4fa77
+border-size=2
+border-radius=10
+padding=14
+margin=10
+width=340
+font=JetBrains Mono 11
+default-timeout=5000
+icons=1
+max-icon-size=32
+
+[urgency=low]
+background-color=#1a3050b3
+border-color=#4a7aaa66
+
+[urgency=normal]
+background-color=#1e3a5fcc
+border-color=#89b4fa77
+
+[urgency=high]
+background-color=#1e3a5fdd
+border-color=#74c7ecaa
+text-color=#cce0ffff
